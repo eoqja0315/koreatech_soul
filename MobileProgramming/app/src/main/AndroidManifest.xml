@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hdb.mobileprogramming">
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/househole_icon2"
+        android:label="가계부"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterActivity"
+            android:label="회원가입">
+
+        </activity>
+
+        <activity android:name=".ListMainActivity"
+            android:label="가계부">
+        </activity>
+
+        <activity android:name=".SpendList"
+            android:label="지출 내역"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity android:name=".ImportList"
+            android:label="수입 내역"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+    </application>
+
+</manifest>

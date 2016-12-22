@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/first"
+        android:title="10대">
+
+    </item>
+
+    <item
+        android:id="@+id/second"
+        android:title="20대">
+
+    </item>
+
+    <item
+        android:id="@+id/third"
+        android:title="30대">
+
+    </item>
+
+    <item
+        android:id="@+id/fourth"
+        android:title="40대">
+
+    </item>
+
+    <item
+        android:id="@+id/fifth"
+        android:title="50대">
+
+    </item>
+
+    <item
+        android:id="@+id/sixth"
+        android:title="60대">
+
+    </item>
+
+</menu>

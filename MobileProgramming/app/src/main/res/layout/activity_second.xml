@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeLayout1"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="49dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="중복확인"
+            android:textSize="15dp"
+            android:onClick="onClickTextView"
+            android:id="@+id/IdCheckTextView"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IdCheckTextView"
+            android:layout_alignLeft="@id/IdCheckTextView"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:id="@+id/RedundancyMessage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:paddingBottom="3dp"
+            android:text="아이디 : "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/IdTextView"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/IdCheckTextView"
+            android:layout_toRightOf="@id/IdTextView"
+            android:layout_alignBottom="@id/IdTextView"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/editdesign"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:id="@+id/IdEditText"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout1"
+        android:id="@+id/RelativeLayout2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="5dp"
+            android:text="패스워드 : "
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:id="@+id/PasswordTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/PasswordTextView"
+            android:layout_alignBottom="@id/PasswordTextView"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/editdesign"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:id="@+id/PasswordEditText"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/RelativeLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="5dp"
+            android:text="재확인 : "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/PasswordCheckTextView"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/PasswordCheckTextView"
+            android:layout_alignBottom="@id/PasswordCheckTextView"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/editdesign"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@null"
+            android:id="@+id/PasswordCheckEditText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PasswordCheckEditText"
+            android:layout_alignRight="@id/PasswordCheckEditText"
+            android:textSize = "15dp"
+            android:id="@+id/PasswordChecking"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/PasswordCheckTextView"
+            android:paddingBottom="5dp"
+            android:text="성   별 : "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/SexualTextView"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/SexualTextView"
+            android:layout_alignLeft="@id/PasswordCheckEditText"
+            android:layout_alignBottom="@id/SexualTextView"
+            android:background="@drawable/editdesign"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/Sex"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/SexualTextView"
+            android:paddingBottom="3dp"
+            android:text="연   령 : "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/AgeTextView"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/AgeTextView"
+            android:layout_alignLeft="@id/PasswordCheckEditText"
+            android:layout_alignBottom="@id/AgeTextView"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/editdesign"
+            android:id="@+id/AgeTextView2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/AgeTextView"
+            android:paddingBottom="3dp"
+            android:text="핸드폰: "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/PhoneNumberTextView"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/PhoneNumberTextView"
+            android:layout_alignBottom="@id/PhoneNumberTextView"
+            android:layout_alignLeft="@id/AgeTextView2"
+            android:background="@drawable/editdesign"
+            android:textCursorDrawable="@null"
+            android:inputType="numberDecimal"
+            android:id="@+id/PhoneNumberEditText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/PhoneNumberEditText"
+            android:layout_alignBottom="@id/PhoneNumberEditText"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="-"
+            android:textSize="30dp"
+            android:id="@+id/PhoneNumberTextView2"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/PhoneNumberTextView2"
+            android:layout_alignBottom="@id/PhoneNumberTextView2"
+            android:background="@drawable/editdesign"
+            android:textCursorDrawable="@null"
+            android:inputType="numberDecimal"
+            android:id="@+id/PhoneNumberEditText2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/PhoneNumberEditText2"
+            android:layout_alignBottom="@id/PhoneNumberEditText2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="-"
+            android:textSize="30dp"
+            android:id="@+id/PhoneNumberTextView3"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/PhoneNumberTextView3"
+            android:layout_alignBottom="@id/PhoneNumberTextView3"
+            android:background="@drawable/editdesign"
+            android:textCursorDrawable="@null"
+            android:inputType="numberDecimal"
+            android:id="@+id/PhoneNumberEditText3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PhoneNumberTextView"
+            android:layout_marginTop="25dp"
+            android:layout_alignLeft="@id/PhoneNumberTextView"
+            android:paddingBottom="5dp"
+            android:text="인증번호 : "
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:id="@+id/CertificateNumberTextView"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/CertificateNumberTextView"
+            android:layout_alignBottom="@id/CertificateNumberTextView"
+            android:layout_alignLeft="@id/PhoneNumberEditText"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/editdesign"
+            android:id="@+id/CertificateNumberEditText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/CertificateNumberEditText"
+            android:layout_alignBottom="@id/CertificateNumberEditText"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="2dp"
+            android:text="전송"
+            android:textSize="20dp"
+            android:onClick="onClickTextView"
+            android:id="@+id/CertificationTextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/CertificationTextView"
+            android:layout_alignBottom="@id/CertificationTextView"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="2dp"
+            android:text="확인"
+            android:textSize="20dp"
+            android:onClick="onClickTextView"
+            android:id="@+id/CertificationTextView2"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="확인"
+        android:textSize="20dp"
+        android:onClick="onClickButton"
+        android:id="@+id/ApproveButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="취소"
+        android:textSize="20dp"
+        android:onClick="onClickButton"
+        android:id="@+id/CancelButton"/>
+
+</RelativeLayout>

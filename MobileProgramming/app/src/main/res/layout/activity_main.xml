@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.parkjinchan.mobiletp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I         D : "
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:id="@+id/IDTextView"
+        android:layout_marginTop="105dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/IDTextView"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/editdesign"
+        android:textCursorDrawable="@null"
+        android:inputType="text"
+        android:maxLines="1"
+        android:id="@+id/IDEditText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_below="@id/IDTextView"
+        android:text="Password : "
+        android:textSize="19dp"
+        android:textColor="#000000"
+        android:id="@+id/PasswordTextView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/IDEditText"
+        android:layout_toRightOf="@id/PasswordTextView"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/IDEditText"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/editdesign"
+        android:id="@+id/PasswordEditText"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/PasswordEditText"
+        android:layout_alignRight="@id/PasswordEditText"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="회원가입"
+            android:textSize="20dp"
+            android:onClick="onClick"
+            android:id="@+id/RegisterButton"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="로그인"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/LoginButton"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
